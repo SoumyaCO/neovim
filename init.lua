@@ -1,7 +1,6 @@
 require("core.options")
 require("core.keymaps")
 require("core.autocmd")
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.uv.fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -22,9 +21,10 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.autopairs"),
 	require("plugins.oil"), -- oil, file editor
-	require("plugins.neotree"), -- neotree
+	-- 	require("plugins.neotree"), -- neotree
 	require("plugins.completion"), -- autocomplete
-	require("plugins.custom_snippets"),
+	--	require("plugins.custom_snippets"),
+	require("plugins.mini"), -- small modules of many things [I'm using just the]
 	require("plugins.gitsigns"),
 	require("plugins.hl_colors"), -- nvim highlight-colors
 	require("plugins.nerdy"), -- unicode icons(web devicons)
