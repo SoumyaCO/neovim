@@ -1,5 +1,6 @@
 require("core.options")
 require("core.keymaps")
+require("core.autocmd")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.uv.fs_stat(lazypath) then
@@ -12,20 +13,21 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.colortheme"),
+	require("plugins.colortheme"), -- [(Format): comment the current one, and use the next ]
 	require("plugins.lualine"),
-	require("plugins.lsp"),
-	require("plugins.lspsaga"),
-	require("plugins.telescope"),
+	require("plugins.lsp"), -- lsp setup [ Need more time]
+	require("plugins.lspsaga"), -- better ui for lsp [ More config options, keybindings]
+	require("plugins.telescope"), -- telescope [ Need more time ]
 	require("plugins.treesitter"),
 	require("plugins.conform"),
 	require("plugins.autopairs"),
 	require("plugins.oil"), -- oil, file editor
-	require("plugins.neotree"),
+	require("plugins.neotree"), -- neotree
 	require("plugins.completion"), -- autocomplete
+	require("plugins.custom_snippets"),
 	require("plugins.gitsigns"),
-	require("plugins.hl_colors"),
-	require("plugins.nerdy"),
-	require("plugins.obsidian"), -- obsidian
-	require("plugins.debug"),
+	require("plugins.hl_colors"), -- nvim highlight-colors
+	require("plugins.nerdy"), -- unicode icons(web devicons)
+	require("plugins.obsidian"), -- obsidian [ Need more time to condigure keymaps]
+	require("plugins.debug"), -- [ Need to understand better, and use it ]
 })
