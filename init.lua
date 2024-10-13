@@ -22,7 +22,7 @@ require("lazy").setup({
 	require("plugins.autopairs"),
 	require("plugins.oil"), -- oil, file editor
 	require("plugins.neotree"),
-	require("plugins.cmp_neovim"), -- autocomplete
+	require("plugins.completion"), -- autocomplete
 	require("plugins.gitsigns"),
 	require("plugins.hl_colors"),
 	require("plugins.nerdy"),
