@@ -5,7 +5,10 @@ return {
 			lightbulb = {
 				enable = false,
 			},
-			border_style = "shadow",
+			symbol_in_winbar = {
+				enable = false,
+			},
+			border_style = "rounded",
 		})
 	end,
 	dependencies = {
@@ -22,4 +25,6 @@ return {
 		{ desc = "[S]earch [D]iagnostics" }
 	),
 	vim.keymap.set("n", "<leader>fi", "<cmd>Lspsaga finder<cr>", { desc = " [f]inder" }),
+	vim.keymap.set("n", "<leader>fo", "<cmd>Lspsaga outline<cr>", { desc = " [f]inder" }),
+	vim.keymap.set("n", "<leader>wt", "<cmd>Lspsaga winbar_toggle<cr>", { desc = " [f]inder" }),
 }

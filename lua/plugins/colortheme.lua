@@ -1,13 +1,25 @@
 return {
-	"folke/tokyonight.nvim",
+	"gbprod/nord.nvim",
 	lazy = false,
 	priority = 1000,
-	opts = {},
 	config = function()
-		require("tokyonight").setup({})
-		vim.cmd("colorscheme tokyonight-night")
+		require("nord").setup({})
+		vim.cmd.colorscheme("nord")
 	end,
 }
+
+-- return {
+-- 	"folke/tokyonight.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = {},
+-- 	config = function()
+-- 		require("tokyonight").setup({
+-- 			transparent = true,
+-- 		})
+-- 		vim.cmd("colorscheme tokyonight-night")
+-- 	end,
+-- }
 
 -- return{
 -- 	"rose-pine/neovim",
