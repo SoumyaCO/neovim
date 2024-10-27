@@ -1,13 +1,46 @@
-return {
-	"gbprod/nord.nvim",
-	lazy = false,
-	priority = 1000,
-	config = function()
-		require("nord").setup({})
-		vim.cmd.colorscheme("nord")
-	end,
-}
+-- return {
+-- 	"0xstepit/flow.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	opts = {},
+-- 	config = function()
+-- 		require("flow").setup({
+-- 			dark_theme = true, -- Set the theme with dark background.
+-- 			high_contrast = true, -- Make the dark background darker or the light background lighter.
+-- 			transparent = false, -- Set transparent background.
+-- 			fluo_color = "orange", -- Color used as fluo. Available values are pink, yellow, orange, or green.
+-- 			mode = "base", -- Mode of the colors. Available values are: dark, bright, desaturate, or base.
+-- 			aggressive_spell = false, -- Use colors for spell check.
+-- 		})
+--
+-- 		vim.cmd("colorscheme flow")
+-- 	end,
+-- }
+-- return {
+-- 	"sainnhe/sonokai",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function()
+-- 		-- Optionally configure and load the colorscheme
+-- 		-- directly inside the plugin declaration.
+-- 		vim.g.sonokai_enable_italic = true
+-- 		vim.g.sonokai_cursor = "red"
+-- 		vim.g.sonokai_style = "default"
+-- 		vim.g.sonokai_better_performance = 1
+-- 		vim.cmd.colorscheme("sonokai")
+-- 	end,
+-- }
 
+-- return {
+-- 	"gbprod/nord.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function()
+-- 		require("nord").setup({})
+-- 		vim.cmd.colorscheme("nord")
+-- 	end,
+-- }
+--
 -- return {
 -- 	"folke/tokyonight.nvim",
 -- 	lazy = false,
@@ -21,7 +54,7 @@ return {
 -- 	end,
 -- }
 
--- return{
+-- return {
 -- 	"rose-pine/neovim",
 -- 	name = "rose-pine",
 -- 	lazy = false,
@@ -42,8 +75,8 @@ return {
 --
 -- 			styles = {
 -- 				bold = true,
--- 				italic = false,
--- 				transparency = true,
+-- 				italic = true,
+-- 				transparency = false,
 -- 			},
 --
 -- 			groups = {

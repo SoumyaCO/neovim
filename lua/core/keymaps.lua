@@ -30,10 +30,10 @@ vim.keymap.set("n", "<leader>se", "<C-w>=", opts)
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts)
 
 -- resize panes with arrow keys
-vim.keymap.set("n", "t", "<CMD>resize +2<CR>", opts)
-vim.keymap.set("n", "n", "<CMD>resize -2<CR>", opts)
-vim.keymap.set("n", "r", "<CMD>vertical resize +2<CR>", opts)
-vim.keymap.set("n", "b", "<CMD>vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<Up>", "<CMD>resize +2<CR>", opts)
+vim.keymap.set("n", "<Down>", "<CMD>resize -2<CR>", opts)
+vim.keymap.set("n", "<Left>", "<CMD>vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<Right>", "<CMD>vertical resize +2<CR>", opts)
 
 -- focus on l,r,t,d windows
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
@@ -47,3 +47,6 @@ vim.keymap.set("n", "<leader>", "<CMD>set wrap!<CR>", opts)
 -- stay in indent mode
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
+
+-- file tree open
+vim.keymap.set("n", "<leader>pv", "<CMD>Ex<CR>", opts)

@@ -2,9 +2,19 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- default themes
+vim.cmd("colorscheme retrobox")
+
 -- nerd font symbols
 -- [Planning to remove this later]
 vim.g.have_nerd_font = true
+
+-- laststatus
+-- Single statusline for multiple splits
+vim.opt.ls = 3
+
+-- pumblend
+-- vim.opt.pb = 0
 
 -- line number
 vim.opt.number = true

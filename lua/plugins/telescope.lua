@@ -17,23 +17,21 @@ return {
 	},
 	config = function()
 		require("telescope").setup({
-			-- defaults = require("telescope.themes").get_dropdown({
-			-- 	prompt_prefix = " ",
-			-- 	selection_caret = " ",
-			-- 	path_display = { "smart" },
-			-- }),
-			--
-			defaults = {
-				prompt_prefix = "  ",
-				selection_caret = " 󰮺 ",
-				-- path_display = { "smart" },
-			},
+			defaults = require("telescope.themes").get_dropdown({
+				prompt_prefix = " ",
+				selection_caret = " ",
+			}),
+
+			-- defaults = {
+			-- 	prompt_prefix = "  ",
+			-- 	selection_caret = " 󰮺 ",
+			-- },
 			pickers = {
-				file_ignore_patterns = { "node_modules", ".git", ".venv", ".vendor" },
+				file_ignore_patterns = { "node_modules", ".git", ".venv", "vendor/" },
 				hidden = true,
 			},
 			live_grep = {
-				file_ignore_patterns = { "node_modules", ".git", ".venv", ".vendor" },
+				file_ignore_patterns = { "node_modules", ".git", ".venv", "vendor/" },
 				additional_args = function(_)
 					return { "--hidden" }
 				end,

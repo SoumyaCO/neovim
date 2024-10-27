@@ -49,13 +49,15 @@ return {
 		cmp.setup({
 			window = {
 				completion = cmp.config.window.bordered(),
+
 				documentation = cmp.config.window.bordered(),
 			},
 			formatting = {
 				expandable_indicator = true,
 				fields = { "abbr", "kind", "menu" },
 				format = function(entry, vim_item)
-					vim_item.kind = (icons[vim_item.kind] or "󱏒") .. " " .. vim_item.kind
+					-- vim_item.kind = (icons[vim_item.kind] or "󱏒") .. " " .. "[" .. vim_item.kind .. "]"
+					vim_item.kind = "[" .. (vim_item.kind or " ") .. "]"
 					return require("nvim-highlight-colors").format(entry, vim_item)
 				end,
 			},
