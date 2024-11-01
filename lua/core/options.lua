@@ -3,7 +3,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- default themes
-vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme retrobox")
+-- vim.cmd("colorscheme habamax")
 
 -- nerd font symbols
 -- [Planning to remove this later]
@@ -16,9 +17,9 @@ vim.opt.ls = 3
 -- pumblend
 -- vim.opt.pb = 0
 
--- line number
-vim.opt.number = true
-vim.opt.relativenumber = true
+-- line number [when I need extreme focus, Just Kidding]
+vim.opt.number = false
+vim.opt.relativenumber = false
 
 -- terminal colors
 vim.opt.termguicolors = true

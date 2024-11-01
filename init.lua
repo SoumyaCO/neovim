@@ -27,15 +27,16 @@ require("lazy").setup({
 	require("plugins.highlight"),
 	require("plugins.nerdy"),
 	require("plugins.obsidian"),
-	-- [configured, but don't use them for now] ----
+	require("plugins.markdown_preview"),
+	require("plugins.colortheme"), -- [DarkVoid]
+	require("plugins.neogit"),
+    -- [configured, but don't use them for now] ----
 	-- ---------------------------------------------
 	-- require("plugins.debug"),
 	-- require("plugins.custom_snippets"),
 	-- require("plugins.mini"), -- small modules of many things [I'm using just the]
 	-- require("plugins.oil"), -- oil, file editor
 	-- require("plugins.neotree"), -- neotree
-	-- require("plugins.neogit"), [ Don't use this seriously, have to use it more]
-	-- require("plugins.colortheme"), -- [(Format): comment the current one, and use the next ]
 	-- require("plugins.lualine"),
 	-- ---------------------------------------------
 })
