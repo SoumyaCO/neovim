@@ -13,6 +13,11 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    -- require("plugins.floatterminal"),
+    require("plugins.tiny_little_diagnostic"),
+    require("plugins.dooing"),
+    require("plugins.snacks"),
+    require("plugins.noice"),
 	require("plugins.telescope"),
 	require("plugins.treesitter"),
 	require("plugins.lsp"),
@@ -37,7 +42,7 @@ require("lazy").setup({
 	-- require("plugins.mini"), -- small modules of many things [I'm using just the]
 	-- require("plugins.oil"), -- oil, file editor
 	-- require("plugins.neotree"), -- neotree
-	-- require("plugins.lualine"),
+	require("plugins.lualine"),
 	-- ---------------------------------------------
 })
 

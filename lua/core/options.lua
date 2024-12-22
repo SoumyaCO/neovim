@@ -18,8 +18,8 @@ vim.opt.ls = 3
 -- vim.opt.pb = 0
 
 -- line number [when I need extreme focus, Just Kidding]
-vim.opt.number = false
-vim.opt.relativenumber = false
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- terminal colors
 vim.opt.termguicolors = true
@@ -80,6 +80,9 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 18
+
+-- vim diagnostic config disable virtual text
+vim.diagnostic.config({virtual_text = false})
 
 -- useful for resizing splits
 -- [planning to remove it later]

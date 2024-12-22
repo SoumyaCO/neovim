@@ -10,7 +10,11 @@ return {
 		vim.g.gruvbox_material_foreground = 'mix'
         vim.g.gruvbox_material_ui_contrast = 'high'
 		vim.cmd.colorscheme("gruvbox-material")
-		vim.api.nvim_set_hl(0, "FloatBorder", {bg='#282828'})
-		vim.api.nvim_set_hl(0, "NormalFloat", {bg='#282828'})
+		-- vim.api.nvim_set_hl(0, "FloatBorder", {bg='#282828'})
+		-- vim.api.nvim_set_hl(0, "NormalFloat", {bg='#282828'})
+		vim.api.nvim_set_hl(0, "FloatBorder", {bg='#1d2021'})
+		vim.api.nvim_set_hl(0, "NormalFloat", {bg='#1d2021'})
+
+
 	end,
 }

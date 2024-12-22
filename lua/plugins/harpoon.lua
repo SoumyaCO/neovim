@@ -14,7 +14,7 @@ return {
 	vim.keymap.set("n", "<C-n>", function()
 		require("harpoon.ui").nav_next()
 	end, { noremap = true, silent = true }),
-	vim.keymap.set("n", "<C-m>", function()
+	vim.keymap.set("n", "<C-b>", function()
 		require("harpoon.ui").toggle_quick_menu()
 	end, { noremap = true, silent = true }),
 }

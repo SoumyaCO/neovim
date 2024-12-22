@@ -4,5 +4,5 @@ return {
 	event = "VimEnter",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = { signs = false },
-	vim.keymap.set("n", "<leader>td", "<cmd>TodoTelescope<CR>"),
+	vim.keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<CR>"),
 }
